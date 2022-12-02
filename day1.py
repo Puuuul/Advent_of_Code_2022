@@ -1,6 +1,8 @@
+import toolbox
+
+
 def method():
-    file = open("input/day1.txt")
-    lines = file.readlines()
+    lines = toolbox.open_and_read("input/day1.txt")
     calories = [0]
     for line in lines:
         if line == "\n":
