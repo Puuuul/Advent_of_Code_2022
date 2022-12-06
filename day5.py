@@ -46,8 +46,7 @@ def method2():
         if status == 1:
             line = line.split(" ")
             for i in range(int(line[1])):
-                stacks[int(line[5])-1].append(stacks[int(line[3])-1]
-                                              .pop(len(stacks[int(line[3])-1])-int(line[1])+i))
+                stacks[int(line[5])-1].append(stacks[int(line[3])-1].pop(len(stacks[int(line[3])-1])-int(line[1])+i))
     final = ""
     for stack in stacks:
         final += stack[len(stack)-1]
